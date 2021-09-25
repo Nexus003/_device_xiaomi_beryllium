@@ -9,6 +9,8 @@
 
 DEVICE_PATH := device/xiaomi/beryllium
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := beryllium
 
@@ -25,7 +27,7 @@ BOARD_HAVE_QCOM_FM := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel
+ # Kernel
 TARGET_KERNEL_CONFIG := beryllium_defconfig
 
 # HIDL

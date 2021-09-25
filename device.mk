@@ -84,3 +84,25 @@ PRODUCT_COPY_FILES += \
 # PocketMode
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
+
+ # Duplicate Rules
+ BUILD_BROKEN_DUP_RULES := true
+ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sdm845
+TARGET_BOARD_PLATFORM := sdm845
+
+# QCOM
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
+# HALS
+    SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
+    SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
+    SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/sdm845

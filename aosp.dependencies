@@ -1,0 +1,3 @@
+    {
+        "repository":   "android_vendor_miuicamera",
+        "target_path":  "vendor/miuicamera",
